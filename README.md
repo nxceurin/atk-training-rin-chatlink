@@ -19,7 +19,7 @@ space: name of space to get links from
 save_to: folder/to/save/url.txt/to/
 ```
 
-Add your ```client_secrets.json``` file from Google Cloud Console to ```atk_training_rin_chatlink```. Make sure it has the following scopes enabled:<br>
+If downloaded from GitHub, add your ```client_secrets.json``` file from <a href="https://console.cloud.google.com/">Google Cloud Console</a> to ```atk_training_rin_chatlink```. Make sure it has the following scopes enabled:<br>
 <ul>
 <li>.../auth/chat.spaces.readonly</li>
 <li>.../auth/chat.messages.readonly</li>
