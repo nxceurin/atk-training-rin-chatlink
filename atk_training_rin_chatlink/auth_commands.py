@@ -9,10 +9,8 @@ SCOPES = ["https://www.googleapis.com/auth/chat.spaces.readonly",
 
 
 def connect_to_app():
-    # client_secrets = os.environ.get(os.path.dirname(__file__)+'/.env')
     flow = InstalledAppFlow.from_client_secrets_file(
         os.path.dirname(__file__)+'/client_secrets.json', SCOPES)
-    # flow = InstalledAppFlow.from_client_secrets_file(client_secrets, SCOPES)
     creds = flow.run_local_server()
     service = build('chat', 'v1', credentials=creds)
     return service
